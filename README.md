@@ -41,7 +41,7 @@ To integrate ScyllaDB connector download code:
 
 `cd target/components/packages`
 
-And copy all jars under `target/components/packages` local `scylla-sink-connector` directory
+And copy all jars under `target/components/packages` to a local directory: `scylla-sink-connector` 
 
 
 
