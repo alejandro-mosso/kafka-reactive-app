@@ -32,14 +32,16 @@ For additional examples that showcase streaming applications within an event str
 # Changes
 This configuration was complemented with ScyllaDB connectors.
 To integrate ScyllaDB connector download code:
+
 `git clone https://github.com/scylladb/kafka-connect-scylladb.git`
+
 `cd kafka-connect-scylladb/`
+
 `mvn clean install -DskipTests=true`
+
 `cd target/components/packages`
 
-`mkdir ./scyllaDB-sink-connector`
-
-And copy all jars under `target/components/packages` local `Scylla-Sink-Connector` directory
+And copy all jars under `target/components/packages` local `scylla-sink-connector` directory
 
 
 
