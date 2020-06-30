@@ -1,4 +1,4 @@
-![image](https://raw.githubusercontent.com/alejandro-mosso/kafka-reactive-app/master/kafka-pipeline.jpg)
+![image](kafka-pipeline.jpg)
 
 # Start docker
     `sudo systemctl status docker`
