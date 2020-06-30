@@ -1,0 +1,43 @@
+# processor project
+
+This project uses Quarkus, the Supersonic Subatomic Java Framework.
+
+If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
+
+## Running the application in dev mode
+
+You can run your application in dev mode that enables live coding using:
+```
+./mvnw quarkus:dev -Ddebug=5007
+```
+
+## Dependency analysis
+
+Find unused dependencies running this command:
+`mvn dependency:analyze`
+
+## Packaging and running the application
+
+The application can be packaged using 
+`./mvnw clean package -DskipTests=true`.
+It produces the `processor-1.0.0-runner.jar` file in the `/target` directory.
+Be aware that it’s not an _über-jar_ as the dependencies are copied into the `target/lib` directory.
+
+The application is now runnable using `java -jar target/processor-1.0.0-runner.jar`.
+
+## Run with Docker
+`docker build -t stock-processor .`
+`docker run --network="host" --cpus="2" stock-processor`
+
+`docker container ls | grep stock-processor`
+`docker kill <CONTAINER ID>`
+
+## Creating a native executable
+
+You can create a native executable using: `./mvnw package -Pnative`.
+
+Or, if you don't have GraalVM installed, you can run the native executable build in a container using: `./mvnw package -Pnative -Dquarkus.native.container-build=true`.
+
+You can then execute your native executable with: `./target/processor-1.0.0-runner`
+
+If you want to learn more about building native executables, please consult https://quarkus.io/guides/building-native-image.
