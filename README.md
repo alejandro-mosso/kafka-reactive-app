@@ -1,4 +1,4 @@
-![image](../images/confluent-logo-300-2.png)
+![image](https://raw.githubusercontent.com/alejandro-mosso/kafka-reactive-app/master/kafka-pipeline.jpg)
 
 # Start docker
     `sudo systemctl status docker`
