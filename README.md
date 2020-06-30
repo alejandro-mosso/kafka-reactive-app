@@ -1,4 +1,13 @@
+
+# Architecture
+<div style="text-align:center">
+![image](kafka-architecture.jpg)
+</div>
+
+# Components interaction
+<div style="text-align:center">
 ![image](kafka-pipeline.jpg)
+</div>
 
 # Start docker
     `sudo systemctl status docker`
